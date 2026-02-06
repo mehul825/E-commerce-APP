@@ -1,154 +1,854 @@
 const products = [
     {
-        _id: '1',
-        name: 'Airpods Wireless Bluetooth Headphones',
-        image: '/images/airpods-wireless-bluetooth-headphones.jpg',
-        description:
-            'Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working',
-        brand: 'Apple',
-        category: 'Electronics',
-        price: 89.99,
-        countInStock: 10,
-        rating: 4.5,
-        numReviews: 12,
-        images: ["/images/airpods-wireless-bluetooth-headphones.jpg"],
-        reviews: [],
+        "_id": "1",
+        "title": "Airpods Wireless Bluetooth Headphones",
+        "image": "/images/airpods-wireless-bluetooth-headphones.jpg",
+        "description": "Bluetooth technology lets you connect it with compatible devices wirelessly.",
+        "brand": "Apple",
+        "category": "Electronics",
+        "price": 89.99,
+        "countInStock": 10,
+        "rating": 4.5,
+        "numReviews": 12,
+        "images": [
+            "/images/airpods-wireless-bluetooth-headphones.jpg"
+        ],
+        "name": "Airpods Wireless Bluetooth Headphones",
+        "reviews": []
     },
     {
-        _id: '2',
-        name: 'iPhone 13 Pro 256GB Memory',
-        image: '/images/iphone-13-pro-256gb-memory.jpg',
-        description:
-            'Introducing the iPhone 13 Pro. A transformative triple-camera system that adds tons of capability without complexity. An unprecedented leap in battery life',
-        brand: 'Apple',
-        category: 'Electronics',
-        price: 999.99,
-        countInStock: 7,
-        rating: 4.8,
-        numReviews: 8,
-        images: ["/images/iphone-13-pro-256gb-memory.jpg"],
-        reviews: [],
+        "_id": "2",
+        "title": "iPhone 13 Pro 256GB Memory",
+        "image": "/images/iphone-13-pro-256gb-memory.jpg",
+        "description": "Introducing the iPhone 13 Pro. A transformative triple-camera system.",
+        "brand": "Apple",
+        "category": "Electronics",
+        "price": 999.99,
+        "countInStock": 7,
+        "rating": 4.8,
+        "numReviews": 8,
+        "images": [
+            "/images/iphone-13-pro-256gb-memory.jpg"
+        ],
+        "name": "iPhone 13 Pro 256GB Memory",
+        "reviews": []
     },
     {
-        _id: '3',
-        name: 'Sony Playstation 5',
-        image: '/images/sony-playstation-5.jpg',
-        description:
-            'The ultimate home entertainment center starts with PlayStation. Whether you are into gaming, HD movies, television, music',
-        brand: 'Sony',
-        category: 'Electronics',
-        price: 499.99,
-        countInStock: 3,
-        rating: 5,
-        numReviews: 15,
-        images: ["/images/sony-playstation-5.jpg"],
-        reviews: [],
+        "_id": "3",
+        "title": "Sony Playstation 5",
+        "image": "/images/sony-playstation-5.jpg",
+        "description": "Next-gen gaming console with ultra-high speed SSD.",
+        "brand": "Sony",
+        "category": "Electronics",
+        "price": 499.99,
+        "countInStock": 3,
+        "rating": 5,
+        "numReviews": 15,
+        "images": [
+            "/images/sony-playstation-5.jpg"
+        ],
+        "name": "Sony Playstation 5",
+        "reviews": []
     },
     {
-        _id: '4',
-        name: 'Canon EOS R5 Camera',
-        image: '/images/canon-eos-r5-camera.jpg',
-        description:
-            'The EOS R5EOS R5 is the ultimate hybrid mirrorless camera, offering high resolution, high speed, and high video capabilities',
-        brand: 'Canon',
-        category: 'Electronics',
-        price: 3899.99,
-        countInStock: 2,
-        rating: 4.9,
-        numReviews: 10,
-        images: ["/images/canon-eos-r5-camera.jpg"],
-        reviews: [],
+        "_id": "4",
+        "title": "Canon EOS R5 Camera",
+        "image": "/images/canon-eos-r5-camera.jpg",
+        "description": "Professional mirrorless camera for photography enthusiasts.",
+        "brand": "Canon",
+        "category": "Electronics",
+        "price": 3899.99,
+        "countInStock": 2,
+        "rating": 4.9,
+        "numReviews": 10,
+        "images": [
+            "/images/canon-eos-r5-camera.jpg"
+        ],
+        "name": "Canon EOS R5 Camera",
+        "reviews": []
     },
     {
-        _id: '5',
-        name: 'MacBook Pro 16-inch',
-        image: '/images/macbook-pro-16-inch.jpg',
-        description:
-            'The new MacBook Pro features a stunning 16-inch Retina display, endless capabilities, and the power you need to create anything',
-        brand: 'Apple',
-        category: 'Electronics',
-        price: 2499.99,
-        countInStock: 5,
-        rating: 4.8,
-        numReviews: 20,
-        images: ["/images/macbook-pro-16-inch.jpg"],
-        reviews: [],
+        "_id": "5",
+        "title": "MacBook Pro 16-inch",
+        "image": "/images/macbook-pro-16-inch.jpg",
+        "description": "The most powerful MacBook Pro ever is here.",
+        "brand": "Apple",
+        "category": "Electronics",
+        "price": 2499.99,
+        "countInStock": 5,
+        "rating": 4.8,
+        "numReviews": 20,
+        "images": [
+            "/images/macbook-pro-16-inch.jpg"
+        ],
+        "name": "MacBook Pro 16-inch",
+        "reviews": []
     },
     {
-        _id: '6',
-        name: 'Samsung Galaxy S22 Ultra',
-        image: '/images/samsung-galaxy-s22-ultra.jpg',
-        description:
-            'Meet the Galaxy S22 Ultra, with the power of Note. Slim and bold, a polished frame surrounds the extruded shape for elegant symmetry',
-        brand: 'Samsung',
-        category: 'Electronics',
-        price: 1199.99,
-        countInStock: 10,
-        rating: 4.7,
-        numReviews: 18,
-        images: ["/images/samsung-galaxy-s22-ultra.jpg"],
-        reviews: [],
+        "_id": "6",
+        "title": "Samsung Galaxy S22 Ultra",
+        "image": "/images/samsung-galaxy-s22-ultra.jpg",
+        "description": "Break the rules of power and light with the S22 Ultra.",
+        "brand": "Samsung",
+        "category": "Electronics",
+        "price": 1199.99,
+        "countInStock": 10,
+        "rating": 4.7,
+        "numReviews": 18,
+        "images": [
+            "/images/samsung-galaxy-s22-ultra.jpg"
+        ],
+        "name": "Samsung Galaxy S22 Ultra",
+        "reviews": []
     },
     {
-        _id: '7',
-        name: 'Logitech MX Master 3S',
-        image: '/images/logitech-mx-master-3s.jpg',
-        description:
-            'Meet MX Master 3S – an iconic mouse remastered. Feel every moment of your workflow with even more precision, tactility, and performance',
-        brand: 'Logitech',
-        category: 'Electronics',
-        price: 99.99,
-        countInStock: 25,
-        rating: 4.8,
-        numReviews: 45,
-        images: ["/images/logitech-mx-master-3s.jpg"],
-        reviews: [],
+        "_id": "7",
+        "title": "Logitech MX Master 3S",
+        "image": "/images/logitech-mx-master-3s.jpg",
+        "description": "Performance wireless mouse with ultra-fast scrolling.",
+        "brand": "Logitech",
+        "category": "Electronics",
+        "price": 99.99,
+        "countInStock": 25,
+        "rating": 4.8,
+        "numReviews": 45,
+        "images": [
+            "/images/logitech-mx-master-3s.jpg"
+        ],
+        "name": "Logitech MX Master 3S",
+        "reviews": []
     },
     {
-        _id: '8',
-        name: 'Keychron K2 Mechanical Keyboard',
-        image: '/images/keychron-k2-mechanical-keyboard.jpg',
-        description:
-            'The Keychron K2 is a 75% layout tactile wireless mechanical keyboard. It allows you to connect up to 3 devices via Bluetooth',
-        brand: 'Keychron',
-        category: 'Electronics',
-        price: 79.99,
-        countInStock: 15,
-        rating: 4.6,
-        numReviews: 30,
-        images: ["/images/keychron-k2-mechanical-keyboard.jpg"],
-        reviews: [],
+        "_id": "8",
+        "title": "Keychron K2 Mechanical Keyboard",
+        "image": "/images/keychron-k2-mechanical-keyboard.jpg",
+        "description": "Wireless mechanical keyboard for Mac and Windows.",
+        "brand": "Keychron",
+        "category": "Electronics",
+        "price": 79.99,
+        "countInStock": 15,
+        "rating": 4.6,
+        "numReviews": 30,
+        "images": [
+            "/images/keychron-k2-mechanical-keyboard.jpg"
+        ],
+        "name": "Keychron K2 Mechanical Keyboard",
+        "reviews": []
     },
     {
-        _id: '9',
-        name: 'Bose QuietComfort 45',
-        image: '/images/bose-quietcomfort-45.jpg',
-        description:
-            'The first noise cancelling headphones are back, with world-class quiet, lightweight materials, and proprietary technology for deep, clear sound',
-        brand: 'Bose',
-        category: 'Electronics',
-        price: 329.99,
-        countInStock: 8,
-        rating: 4.7,
-        numReviews: 25,
-        images: ["/images/bose-quietcomfort-45.jpg"],
-        reviews: [],
+        "_id": "9",
+        "title": "Bose QuietComfort 45",
+        "image": "/images/bose-quietcomfort-45.jpg",
+        "description": "Iconic noise cancelling headphones.",
+        "brand": "Bose",
+        "category": "Electronics",
+        "price": 329.99,
+        "countInStock": 8,
+        "rating": 4.7,
+        "numReviews": 25,
+        "images": [
+            "/images/bose-quietcomfort-45.jpg"
+        ],
+        "name": "Bose QuietComfort 45",
+        "reviews": []
     },
     {
-        _id: '10',
-        name: 'GoPro Hero 10 Black',
-        image: '/images/gopro-hero-10-black.jpg',
-        description:
-            'Speed and ease come together in the most powerful GoPro ever. Powered by the revolutionary new GP2 processor',
-        brand: 'GoPro',
-        category: 'Electronics',
-        price: 399.99,
-        countInStock: 12,
-        rating: 4.5,
-        numReviews: 14,
-        images: ["/images/gopro-hero-10-black.jpg"],
-        reviews: [],
+        "_id": "10",
+        "title": "GoPro Hero 10 Black",
+        "image": "/images/gopro-hero-10-black.jpg",
+        "description": "Incredible video stabilization and 5.3K video.",
+        "brand": "GoPro",
+        "category": "Electronics",
+        "price": 399.99,
+        "countInStock": 12,
+        "rating": 4.5,
+        "numReviews": 14,
+        "images": [
+            "/images/gopro-hero-10-black.jpg"
+        ],
+        "name": "GoPro Hero 10 Black",
+        "reviews": []
     },
+    {
+        "_id": "11",
+        "title": "Men's Classic White T-Shirt",
+        "image": "/images/men-s-classic-white-t-shirt.jpg",
+        "description": "Soft cotton t-shirt perfect for everyday wear.",
+        "brand": "Uniqlo",
+        "category": "Clothing",
+        "price": 19.99,
+        "countInStock": 50,
+        "rating": 4.3,
+        "numReviews": 20,
+        "images": [
+            "/images/men-s-classic-white-t-shirt.jpg"
+        ],
+        "name": "Men's Classic White T-Shirt",
+        "reviews": []
+    },
+    {
+        "_id": "12",
+        "title": "Women's Floral Summer Dress",
+        "image": "/images/women-s-floral-summer-dress.jpg",
+        "description": "Elegant floral dress for summer outings.",
+        "brand": "H&M",
+        "category": "Clothing",
+        "price": 49.99,
+        "countInStock": 20,
+        "rating": 4.5,
+        "numReviews": 15,
+        "images": [
+            "/images/women-s-floral-summer-dress.jpg"
+        ],
+        "name": "Women's Floral Summer Dress",
+        "reviews": []
+    },
+    {
+        "_id": "13",
+        "title": "Blue Denim Jacket",
+        "image": "/images/blue-denim-jacket.jpg",
+        "description": "Classic denim jacket that never goes out of style.",
+        "brand": "Levis",
+        "category": "Clothing",
+        "price": 89.99,
+        "countInStock": 15,
+        "rating": 4.7,
+        "numReviews": 30,
+        "images": [
+            "/images/blue-denim-jacket.jpg"
+        ],
+        "name": "Blue Denim Jacket",
+        "reviews": []
+    },
+    {
+        "_id": "14",
+        "title": "Men's Chino Pants",
+        "image": "/images/men-s-chino-pants.jpg",
+        "description": "Slim fit chino pants in beige.",
+        "brand": "Zara",
+        "category": "Clothing",
+        "price": 45,
+        "countInStock": 30,
+        "rating": 4.2,
+        "numReviews": 10,
+        "images": [
+            "/images/men-s-chino-pants.jpg"
+        ],
+        "name": "Men's Chino Pants",
+        "reviews": []
+    },
+    {
+        "_id": "15",
+        "title": "Running Shoes",
+        "image": "/images/running-shoes.jpg",
+        "description": "High performance running shoes in red.",
+        "brand": "Nike",
+        "category": "Clothing",
+        "price": 120,
+        "countInStock": 25,
+        "rating": 4.8,
+        "numReviews": 55,
+        "images": [
+            "/images/running-shoes.jpg"
+        ],
+        "name": "Running Shoes",
+        "reviews": []
+    },
+    {
+        "_id": "16",
+        "title": "Leather Biker Jacket",
+        "image": "/images/leather-biker-jacket.jpg",
+        "description": "Genuine leather biker jacket for a rugged look.",
+        "brand": "AllSaints",
+        "category": "Clothing",
+        "price": 350,
+        "countInStock": 5,
+        "rating": 4.9,
+        "numReviews": 8,
+        "images": [
+            "/images/leather-biker-jacket.jpg"
+        ],
+        "name": "Leather Biker Jacket",
+        "reviews": []
+    },
+    {
+        "_id": "17",
+        "title": "Oversized Hoodie",
+        "image": "/images/oversized-hoodie.jpg",
+        "description": "Cozy oversized hoodie in grey.",
+        "brand": "Adidas",
+        "category": "Clothing",
+        "price": 65,
+        "countInStock": 18,
+        "rating": 4.6,
+        "numReviews": 22,
+        "images": [
+            "/images/oversized-hoodie.jpg"
+        ],
+        "name": "Oversized Hoodie",
+        "reviews": []
+    },
+    {
+        "_id": "18",
+        "title": "Silk Scarf",
+        "image": "/images/silk-scarf.jpg",
+        "description": "Luxurious silk scarf with abstract print.",
+        "brand": "Hermes",
+        "category": "Clothing",
+        "price": 150,
+        "countInStock": 10,
+        "rating": 4.5,
+        "numReviews": 5,
+        "images": [
+            "/images/silk-scarf.jpg"
+        ],
+        "name": "Silk Scarf",
+        "reviews": []
+    },
+    {
+        "_id": "19",
+        "title": "Casual Sneakers",
+        "image": "/images/casual-sneakers.jpg",
+        "description": "White casual sneakers for everyday comfort.",
+        "brand": "Convers",
+        "category": "Clothing",
+        "price": 55,
+        "countInStock": 40,
+        "rating": 4.4,
+        "numReviews": 60,
+        "images": [
+            "/images/casual-sneakers.jpg"
+        ],
+        "name": "Casual Sneakers",
+        "reviews": []
+    },
+    {
+        "_id": "20",
+        "title": "Beanie Hat",
+        "image": "/images/beanie-hat.jpg",
+        "description": "Warm knit beanie hat for winter.",
+        "brand": "Carhartt",
+        "category": "Clothing",
+        "price": 25,
+        "countInStock": 35,
+        "rating": 4.7,
+        "numReviews": 12,
+        "images": [
+            "/images/beanie-hat.jpg"
+        ],
+        "name": "Beanie Hat",
+        "reviews": []
+    },
+    {
+        "_id": "21",
+        "title": "Smart Coffee Maker",
+        "image": "/images/smart-coffee-maker.jpg",
+        "description": "Brew the perfect cup with smart app control.",
+        "brand": "Nespresso",
+        "category": "Home Appliances",
+        "price": 199.99,
+        "countInStock": 8,
+        "rating": 4.8,
+        "numReviews": 25,
+        "images": [
+            "/images/smart-coffee-maker.jpg"
+        ],
+        "name": "Smart Coffee Maker",
+        "reviews": []
+    },
+    {
+        "_id": "22",
+        "title": "Robot Vacuum Cleaner",
+        "image": "/images/robot-vacuum-cleaner.jpg",
+        "description": "Automated cleaning for your entire home.",
+        "brand": "Roomba",
+        "category": "Home Appliances",
+        "price": 349.99,
+        "countInStock": 6,
+        "rating": 4.6,
+        "numReviews": 40,
+        "images": [
+            "/images/robot-vacuum-cleaner.jpg"
+        ],
+        "name": "Robot Vacuum Cleaner",
+        "reviews": []
+    },
+    {
+        "_id": "23",
+        "title": "Air Fryer XL",
+        "image": "/images/air-fryer-xl.jpg",
+        "description": "Cook healthy meals with less oil.",
+        "brand": "Ninja",
+        "category": "Home Appliances",
+        "price": 129.99,
+        "countInStock": 15,
+        "rating": 4.7,
+        "numReviews": 35,
+        "images": [
+            "/images/air-fryer-xl.jpg"
+        ],
+        "name": "Air Fryer XL",
+        "reviews": []
+    },
+    {
+        "_id": "24",
+        "title": "Stand Mixer",
+        "image": "/images/stand-mixer.jpg",
+        "description": "Professional grade stand mixer for baking.",
+        "brand": "KitchenAid",
+        "category": "Home Appliances",
+        "price": 399.99,
+        "countInStock": 4,
+        "rating": 4.9,
+        "numReviews": 50,
+        "images": [
+            "/images/stand-mixer.jpg"
+        ],
+        "name": "Stand Mixer",
+        "reviews": []
+    },
+    {
+        "_id": "25",
+        "title": "Blender 5000",
+        "image": "/images/blender-5000.jpg",
+        "description": "Powerful blender for smoothies and soups.",
+        "brand": "Vitamix",
+        "category": "Home Appliances",
+        "price": 449.99,
+        "countInStock": 7,
+        "rating": 4.8,
+        "numReviews": 12,
+        "images": [
+            "/images/blender-5000.jpg"
+        ],
+        "name": "Blender 5000",
+        "reviews": []
+    },
+    {
+        "_id": "26",
+        "title": "Smart Thermostat",
+        "image": "/images/smart-thermostat.jpg",
+        "description": "Save energy with intelligent heating control.",
+        "brand": "Nest",
+        "category": "Home Appliances",
+        "price": 249.99,
+        "countInStock": 20,
+        "rating": 4.5,
+        "numReviews": 18,
+        "images": [
+            "/images/smart-thermostat.jpg"
+        ],
+        "name": "Smart Thermostat",
+        "reviews": []
+    },
+    {
+        "_id": "27",
+        "title": "Air Purifier",
+        "image": "/images/air-purifier.jpg",
+        "description": "Clean air for a healthy home environment.",
+        "brand": "Dyson",
+        "category": "Home Appliances",
+        "price": 399.99,
+        "countInStock": 10,
+        "rating": 4.6,
+        "numReviews": 22,
+        "images": [
+            "/images/air-purifier.jpg"
+        ],
+        "name": "Air Purifier",
+        "reviews": []
+    },
+    {
+        "_id": "28",
+        "title": "Electric Kettle",
+        "image": "/images/electric-kettle.jpg",
+        "description": "Fast boiling kettle with temperature control.",
+        "brand": "Smeg",
+        "category": "Home Appliances",
+        "price": 149.99,
+        "countInStock": 12,
+        "rating": 4.4,
+        "numReviews": 15,
+        "images": [
+            "/images/electric-kettle.jpg"
+        ],
+        "name": "Electric Kettle",
+        "reviews": []
+    },
+    {
+        "_id": "29",
+        "title": "Toaster 4-Slice",
+        "image": "/images/toaster-4-slice.jpg",
+        "description": "Retro style 4-slice toaster.",
+        "brand": "Smeg",
+        "category": "Home Appliances",
+        "price": 189.99,
+        "countInStock": 8,
+        "rating": 4.3,
+        "numReviews": 10,
+        "images": [
+            "/images/toaster-4-slice.jpg"
+        ],
+        "name": "Toaster 4-Slice",
+        "reviews": []
+    },
+    {
+        "_id": "30",
+        "title": "Cordless Vacuum",
+        "image": "/images/cordless-vacuum.jpg",
+        "description": "Lightweight cordless vacuum for quick cleanups.",
+        "brand": "Dyson",
+        "category": "Home Appliances",
+        "price": 499.99,
+        "countInStock": 15,
+        "rating": 4.7,
+        "numReviews": 28,
+        "images": [
+            "/images/cordless-vacuum.jpg"
+        ],
+        "name": "Cordless Vacuum",
+        "reviews": []
+    },
+    {
+        "_id": "31",
+        "title": "Luxury Face Cream",
+        "image": "/images/luxury-face-cream.jpg",
+        "description": "Rejuvenating face cream for glowing skin.",
+        "brand": "La Mer",
+        "category": "Beauty",
+        "price": 175,
+        "countInStock": 20,
+        "rating": 4.8,
+        "numReviews": 10,
+        "images": [
+            "/images/luxury-face-cream.jpg"
+        ],
+        "name": "Luxury Face Cream",
+        "reviews": []
+    },
+    {
+        "_id": "32",
+        "title": "Matte Lipstick Red",
+        "image": "/images/matte-lipstick-red.jpg",
+        "description": "Bold red matte lipstick, long wearing.",
+        "brand": "MAC",
+        "category": "Beauty",
+        "price": 22,
+        "countInStock": 50,
+        "rating": 4.7,
+        "numReviews": 45,
+        "images": [
+            "/images/matte-lipstick-red.jpg"
+        ],
+        "name": "Matte Lipstick Red",
+        "reviews": []
+    },
+    {
+        "_id": "33",
+        "title": "Perfume Eau de Parfum",
+        "image": "/images/perfume-eau-de-parfum.jpg",
+        "description": "Floral scent with notes of jasmine and rose.",
+        "brand": "Chanel",
+        "category": "Beauty",
+        "price": 135,
+        "countInStock": 15,
+        "rating": 4.9,
+        "numReviews": 30,
+        "images": [
+            "/images/perfume-eau-de-parfum.jpg"
+        ],
+        "name": "Perfume Eau de Parfum",
+        "reviews": []
+    },
+    {
+        "_id": "34",
+        "title": "Eyeshadow Palette",
+        "image": "/images/eyeshadow-palette.jpg",
+        "description": "Highly pigmented eyeshadow palette with 12 shades.",
+        "brand": "Urban Decay",
+        "category": "Beauty",
+        "price": 54,
+        "countInStock": 25,
+        "rating": 4.6,
+        "numReviews": 20,
+        "images": [
+            "/images/eyeshadow-palette.jpg"
+        ],
+        "name": "Eyeshadow Palette",
+        "reviews": []
+    },
+    {
+        "_id": "35",
+        "title": "Facial Serum Vitamin C",
+        "image": "/images/facial-serum-vitamin-c.jpg",
+        "description": "Brightening serum for radiant skin.",
+        "brand": "The Ordinary",
+        "category": "Beauty",
+        "price": 12.9,
+        "countInStock": 40,
+        "rating": 4.5,
+        "numReviews": 60,
+        "images": [
+            "/images/facial-serum-vitamin-c.jpg"
+        ],
+        "name": "Facial Serum Vitamin C",
+        "reviews": []
+    },
+    {
+        "_id": "36",
+        "title": "Makeup Brushes Set",
+        "image": "/images/makeup-brushes-set.jpg",
+        "description": "Professional 10-piece makeup brush set.",
+        "brand": "Sigma",
+        "category": "Beauty",
+        "price": 89,
+        "countInStock": 15,
+        "rating": 4.8,
+        "numReviews": 12,
+        "images": [
+            "/images/makeup-brushes-set.jpg"
+        ],
+        "name": "Makeup Brushes Set",
+        "reviews": []
+    },
+    {
+        "_id": "37",
+        "title": "Hair Oil Treatment",
+        "image": "/images/hair-oil-treatment.jpg",
+        "description": "Nourishing oil for damaged hair.",
+        "brand": "Olaplex",
+        "category": "Beauty",
+        "price": 28,
+        "countInStock": 30,
+        "rating": 4.7,
+        "numReviews": 25,
+        "images": [
+            "/images/hair-oil-treatment.jpg"
+        ],
+        "name": "Hair Oil Treatment",
+        "reviews": []
+    },
+    {
+        "_id": "38",
+        "title": "Nail Polish Set",
+        "image": "/images/nail-polish-set.jpg",
+        "description": "Set of 5 pastel nail polishes.",
+        "brand": "Essie",
+        "category": "Beauty",
+        "price": 40,
+        "countInStock": 20,
+        "rating": 4.4,
+        "numReviews": 18,
+        "images": [
+            "/images/nail-polish-set.jpg"
+        ],
+        "name": "Nail Polish Set",
+        "reviews": []
+    },
+    {
+        "_id": "39",
+        "title": "Sunscreen SPF 50",
+        "image": "/images/sunscreen-spf-50.jpg",
+        "description": "Lightweight sunscreen for daily protection.",
+        "brand": "Supergoop",
+        "category": "Beauty",
+        "price": 34,
+        "countInStock": 45,
+        "rating": 4.6,
+        "numReviews": 35,
+        "images": [
+            "/images/sunscreen-spf-50.jpg"
+        ],
+        "name": "Sunscreen SPF 50",
+        "reviews": []
+    },
+    {
+        "_id": "40",
+        "title": "Bath Bombs Gift Set",
+        "image": "/images/bath-bombs-gift-set.jpg",
+        "description": "Relaxing bath bombs with essential oils.",
+        "brand": "Lush",
+        "category": "Beauty",
+        "price": 29.99,
+        "countInStock": 25,
+        "rating": 4.9,
+        "numReviews": 40,
+        "images": [
+            "/images/bath-bombs-gift-set.jpg"
+        ],
+        "name": "Bath Bombs Gift Set",
+        "reviews": []
+    },
+    {
+        "_id": "41",
+        "title": "Building Blocks Set",
+        "image": "/images/building-blocks-set.jpg",
+        "description": "Creative building blocks for hours of fun.",
+        "brand": "LEGO",
+        "category": "Kids",
+        "price": 59.99,
+        "countInStock": 30,
+        "rating": 4.9,
+        "numReviews": 60,
+        "images": [
+            "/images/building-blocks-set.jpg"
+        ],
+        "name": "Building Blocks Set",
+        "reviews": []
+    },
+    {
+        "_id": "42",
+        "title": "Teddy Bear Plush",
+        "image": "/images/teddy-bear-plush.jpg",
+        "description": "Soft and cuddly teddy bear.",
+        "brand": "Gund",
+        "category": "Kids",
+        "price": 24.99,
+        "countInStock": 40,
+        "rating": 4.8,
+        "numReviews": 35,
+        "images": [
+            "/images/teddy-bear-plush.jpg"
+        ],
+        "name": "Teddy Bear Plush",
+        "reviews": []
+    },
+    {
+        "_id": "43",
+        "title": "Remote Control Car",
+        "image": "/images/remote-control-car.jpg",
+        "description": "Fast RC car for outdoor racing.",
+        "brand": "Hot Wheels",
+        "category": "Kids",
+        "price": 39.99,
+        "countInStock": 15,
+        "rating": 4.5,
+        "numReviews": 20,
+        "images": [
+            "/images/remote-control-car.jpg"
+        ],
+        "name": "Remote Control Car",
+        "reviews": []
+    },
+    {
+        "_id": "44",
+        "title": "Wooden Train Set",
+        "image": "/images/wooden-train-set.jpg",
+        "description": "Classic wooden train tracks and engines.",
+        "brand": "Melissa & Doug",
+        "category": "Kids",
+        "price": 49.99,
+        "countInStock": 12,
+        "rating": 4.7,
+        "numReviews": 18,
+        "images": [
+            "/images/wooden-train-set.jpg"
+        ],
+        "name": "Wooden Train Set",
+        "reviews": []
+    },
+    {
+        "_id": "45",
+        "title": "Drawing Tablet for Kids",
+        "image": "/images/drawing-tablet-for-kids.jpg",
+        "description": "LCD writing tablet for drawing and doodles.",
+        "brand": "Crayola",
+        "category": "Kids",
+        "price": 19.99,
+        "countInStock": 25,
+        "rating": 4.3,
+        "numReviews": 30,
+        "images": [
+            "/images/drawing-tablet-for-kids.jpg"
+        ],
+        "name": "Drawing Tablet for Kids",
+        "reviews": []
+    },
+    {
+        "_id": "46",
+        "title": "Doll House",
+        "image": "/images/doll-house.jpg",
+        "description": "Large wooden doll house with furniture.",
+        "brand": "KidKraft",
+        "category": "Kids",
+        "price": 129.99,
+        "countInStock": 5,
+        "rating": 4.6,
+        "numReviews": 12,
+        "images": [
+            "/images/doll-house.jpg"
+        ],
+        "name": "Doll House",
+        "reviews": []
+    },
+    {
+        "_id": "47",
+        "title": "Board Game - Monopoly",
+        "image": "/images/board-game---monopoly.jpg",
+        "description": "Classic family board game.",
+        "brand": "Hasbro",
+        "category": "Kids",
+        "price": 24.99,
+        "countInStock": 30,
+        "rating": 4.8,
+        "numReviews": 100,
+        "images": [
+            "/images/board-game---monopoly.jpg"
+        ],
+        "name": "Board Game - Monopoly",
+        "reviews": []
+    },
+    {
+        "_id": "48",
+        "title": "Kids Bicycle",
+        "image": "/images/kids-bicycle.jpg",
+        "description": "Durable bicycle with training wheels.",
+        "brand": "Schwinn",
+        "category": "Kids",
+        "price": 119.99,
+        "countInStock": 8,
+        "rating": 4.5,
+        "numReviews": 15,
+        "images": [
+            "/images/kids-bicycle.jpg"
+        ],
+        "name": "Kids Bicycle",
+        "reviews": []
+    },
+    {
+        "_id": "49",
+        "title": "Science Kit",
+        "image": "/images/science-kit.jpg",
+        "description": "Educational science kit for experiments.",
+        "brand": "National Geographic",
+        "category": "Kids",
+        "price": 29.99,
+        "countInStock": 20,
+        "rating": 4.7,
+        "numReviews": 22,
+        "images": [
+            "/images/science-kit.jpg"
+        ],
+        "name": "Science Kit",
+        "reviews": []
+    },
+    {
+        "_id": "50",
+        "title": "Action Figure Hero",
+        "image": "/images/action-figure-hero.jpg",
+        "description": "Poseable action figure with accessories.",
+        "brand": "Marvel",
+        "category": "Kids",
+        "price": 14.99,
+        "countInStock": 50,
+        "rating": 4.6,
+        "numReviews": 40,
+        "images": [
+            "/images/action-figure-hero.jpg"
+        ],
+        "name": "Action Figure Hero",
+        "reviews": []
+    }
 ];
 
 export default products;
