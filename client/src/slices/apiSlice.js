@@ -13,7 +13,23 @@ const baseQuery = async ({ url, method, body, params }) => {
             return { data: products.slice(0, 3) };
         }
         if (url.endsWith('/api/products') || url.includes('?')) {
-            return { data: { products, page: 1, pages: 1 } };
+            let filteredProducts = products;
+
+            // Handle params passed from RTK Query
+            if (params) {
+                if (params.category) {
+                    filteredProducts = filteredProducts.filter(p => p.category === params.category);
+                }
+                if (params.keyword) {
+                    const keyword = params.keyword.toLowerCase();
+                    filteredProducts = filteredProducts.filter(p =>
+                        p.name.toLowerCase().includes(keyword) ||
+                        p.description.toLowerCase().includes(keyword)
+                    );
+                }
+            }
+
+            return { data: { products: filteredProducts, page: 1, pages: 1 } };
         }
         // Get ID from URL
         const idParts = url.split('/');
