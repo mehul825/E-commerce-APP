@@ -43,7 +43,7 @@ const baseQuery = async ({ url, method, body, params }) => {
     // Mock Categories API
     if (url.includes('/api/categories')) {
         const categories = [...new Set(products.map((p) => p.category))].map((cat, index) => ({
-            _id: index.toString(),
+            _id: cat,
             name: cat
         }));
         return { data: categories };
