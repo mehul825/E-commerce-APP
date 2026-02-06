@@ -12,6 +12,7 @@ const products = [
         rating: 4.5,
         numReviews: 12,
         images: ["/images/airpods-wireless-bluetooth-headphones.jpg"],
+        reviews: [],
     },
     {
         _id: '2',
@@ -26,6 +27,7 @@ const products = [
         rating: 4.8,
         numReviews: 8,
         images: ["/images/iphone-13-pro-256gb-memory.jpg"],
+        reviews: [],
     },
     {
         _id: '3',
@@ -40,6 +42,7 @@ const products = [
         rating: 5,
         numReviews: 15,
         images: ["/images/sony-playstation-5.jpg"],
+        reviews: [],
     },
     {
         _id: '4',
@@ -54,6 +57,7 @@ const products = [
         rating: 4.9,
         numReviews: 10,
         images: ["/images/canon-eos-r5-camera.jpg"],
+        reviews: [],
     },
     {
         _id: '5',
@@ -68,6 +72,7 @@ const products = [
         rating: 4.8,
         numReviews: 20,
         images: ["/images/macbook-pro-16-inch.jpg"],
+        reviews: [],
     },
     {
         _id: '6',
@@ -82,6 +87,7 @@ const products = [
         rating: 4.7,
         numReviews: 18,
         images: ["/images/samsung-galaxy-s22-ultra.jpg"],
+        reviews: [],
     },
     {
         _id: '7',
@@ -96,6 +102,7 @@ const products = [
         rating: 4.8,
         numReviews: 45,
         images: ["/images/logitech-mx-master-3s.jpg"],
+        reviews: [],
     },
     {
         _id: '8',
@@ -110,6 +117,7 @@ const products = [
         rating: 4.6,
         numReviews: 30,
         images: ["/images/keychron-k2-mechanical-keyboard.jpg"],
+        reviews: [],
     },
     {
         _id: '9',
@@ -124,6 +132,7 @@ const products = [
         rating: 4.7,
         numReviews: 25,
         images: ["/images/bose-quietcomfort-45.jpg"],
+        reviews: [],
     },
     {
         _id: '10',
@@ -137,7 +146,8 @@ const products = [
         countInStock: 12,
         rating: 4.5,
         numReviews: 14,
-         images: ["/images/gopro-hero-10-black.jpg"],
+        images: ["/images/gopro-hero-10-black.jpg"],
+        reviews: [],
     },
 ];
 

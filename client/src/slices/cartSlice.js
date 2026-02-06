@@ -1,7 +1,14 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = localStorage.getItem('cart')
-    ? JSON.parse(localStorage.getItem('cart'))
+    ? (() => {
+        try {
+            const parsed = JSON.parse(localStorage.getItem('cart'));
+            return parsed && Array.isArray(parsed.cartItems) ? parsed : { cartItems: [], shippingAddress: {}, paymentMethod: 'PayPal' };
+        } catch (e) {
+            return { cartItems: [], shippingAddress: {}, paymentMethod: 'PayPal' };
+        }
+    })()
     : { cartItems: [], shippingAddress: {}, paymentMethod: 'PayPal' };
 
 const cartSlice = createSlice({
