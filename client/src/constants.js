@@ -1,4 +1,4 @@
-export const BASE_URL = 'http://localhost:5000'; // If using proxy, can be empty string
+export const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
 export const PRODUCTS_url = '/api/products';
 export const USERS_URL = '/api/auth';
 export const ORDERS_URL = '/api/orders';
